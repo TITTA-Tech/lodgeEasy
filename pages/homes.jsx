@@ -14,7 +14,7 @@ function homes() {
             return <SearchCard key={i} />;
           })}
       </div>
-      <button className="rounded-lg block w-fit text-center font-semibold bg-secondary px-5 py-2 mx-auto my-16">
+      <button className="rounded-lg block w-fit text-center text-xs md:text-sm font-semibold bg-secondary px-5 py-2 mx-auto my-16">
         Load more
       </button>
     </div>

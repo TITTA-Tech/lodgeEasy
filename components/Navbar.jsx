@@ -20,7 +20,7 @@ export default function Navbar() {
         </a>
       </Link>
       <div
-        className={`absolute top-0 right-0 z-50 md:static p-5 pt-12 md:p-0 md:pt-0 md:opacity-[1!important] md:translate-x-0 h-screen md:h-auto w-4/5 md-w-auto bg-bg-gray md:bg-transparent transition-all duration-1000 ${
+        className={`absolute top-0 right-0 z-50 md:static p-5 pt-12 md:p-0 md:pt-0 md:opacity-[1!important] md:translate-x-0 h-screen md:h-auto w-[85%] md-w-auto bg-white shadow-md md:shadow-none md:bg-transparent transition-all duration-1000 ${
           menuOpened ? "translate-x-0 opacity-1" : "translate-x-full opacity-0"
         } md:flex md:justify-between md:-items-center flex-auto`}
       >
@@ -53,7 +53,7 @@ export default function Navbar() {
 
         <span className="block md:flex md:justify-between md:items-center text-sm font-semibold">
           <Link href="/" passHref={true}>
-            <a className="block md:inline-block bg-primary/10 text-primary hover:text-primary mt-2 mb-5 md:mt-0 md:mb-0 md:px-3 md:py-2 md:mr-2 rounded-xl">
+            <a className="block md:inline-block md:bg-primary/10 md:text-primary hover:text-primary mt-2 mb-5 md:mt-0 md:mb-0 md:px-3 md:py-2 md:mr-2 md:rounded-xl">
               Sign Up
             </a>
           </Link>

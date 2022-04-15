@@ -3,7 +3,7 @@ import Footer from "./Footer"
 
 function Layout({ children }) {
     return (
-        <main className="w-full min-h-screen overflow-hidden bg-bg-gray">
+        <main className="w-full min-h-screen overflow-hidden ">
             <Navbar />
             {children}
             <Footer />

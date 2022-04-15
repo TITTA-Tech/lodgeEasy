@@ -4,19 +4,18 @@ import { useRef } from "react";
 function SearchForm() {
   let searchRef = useRef();
   return (
-    <form className="bg-primary/10 w-full h-auto rounded-xl flex justify-center items-center">
+    <form className="bg-primary/10 w-full h-auto rounded-2xl flex justify-center items-center pr-2">
       <input
         type="search"
         ref={searchRef}
         placeholder="Search for a new home"
-        className="bg-transparent flex-1 py-3 px-2 outline-none"
+        className="bg-transparent flex-2 py-3 px-2 outline-none w-full"
       />
       <button
         type="submit"
-        className="bg-primary text-white h-full rounded-xl px-3 py-2 mr-1 flex justify-center items-center text-sm font-semibold"
+        className="bg-primary text-white w-fit flex-1 h-full rounded-full px-3 py-2"
       >
-        <SearchOutlinedIcon className="w-[1.2rem!important] mr-1" />
-        Search
+        <SearchOutlinedIcon className="w-[1.2rem!important]" />
       </button>
     </form>
   );

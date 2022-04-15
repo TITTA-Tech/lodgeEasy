@@ -46,10 +46,7 @@ function SearchFilter() {
         <Dialog disableEscapeKeyDown open={open} onClose={handleCancel}>
           <DialogTitle>Enter a Budget</DialogTitle>
           <DialogContent>
-            <Box
-              component="form"
-              sx={{ m: 1, display: "flex", flexWrap: "wrap" }}
-            >
+            <Box component="form" sx={{ display: "flex", flexWrap: "wrap" }}>
               <FormControl>
                 <TextField
                   inputProps={{ inputMode: "numeric", pattern: "[0-9]*" }}
@@ -66,6 +63,7 @@ function SearchFilter() {
                     }
                   }}
                   className="mr-1"
+                  margin="normal"
                 />
               </FormControl>
               <FormControl>
@@ -83,6 +81,7 @@ function SearchFilter() {
                       setMax(e.target.value);
                     }
                   }}
+                  margin="normal"
                 />
               </FormControl>
             </Box>

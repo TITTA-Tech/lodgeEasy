@@ -103,7 +103,7 @@ export default function Home() {
           <Image src={doodle} alt="create a wishlist" />
         </div>
         <Link href="/" passHref={true}>
-          <a className="rounded-lg block w-fit text-center font-semibold bg-secondary px-5 py-2 mx-auto"><AddRoundedIcon /> Create wishlist</a>
+          <a className="rounded-lg block w-fit text-center text-xs md:text-sm font-semibold bg-secondary px-5 py-2 mx-auto"><AddRoundedIcon /> Create wishlist</a>
         </Link>
       </div>
       <div className="mt-16 p-5 md:px-10 w-screen min-h-72 relative">
@@ -121,7 +121,7 @@ export default function Home() {
           <Image src={rentalGuy} alt="create a wishlist" />
         </div>
         <Link href="/" passHref={true}>
-          <a className="rounded-lg block w-fit text-center font-semibold bg-secondary px-5 py-2 mx-auto">Find a rental</a>
+          <a className="rounded-lg block w-fit text-center font-semibold text-xs md:text-sm bg-secondary px-5 py-2 mx-auto">Find a rental</a>
         </Link>
       </div>
     </>
