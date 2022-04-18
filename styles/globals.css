@@ -6,3 +6,7 @@
   appearance: none;
   height: 0;
 }
+
+button, a{
+user-select: none;
+}
