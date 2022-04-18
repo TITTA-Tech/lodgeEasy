@@ -2,17 +2,34 @@ import Image from "next/image";
 import Link from "next/link";
 import demoImg from "../assets/demoImg.svg";
 import FavoriteBorderRoundedIcon from "@mui/icons-material/FavoriteBorderRounded";
-// import FavoriteIcon from '@mui/icons-material/Favorite';
+import FavoriteIcon from "@mui/icons-material/Favorite";
 import StarRateRoundedIcon from "@mui/icons-material/StarRateRounded";
+import { useState } from "react";
 
 function Card() {
+  const [addToWishList, setAddToWishList] = useState(false);
+  const handle = () => {
+    setAddToWishList(true);
+  };
   return (
     <div className="bg-white rounded-lg w-64 min-h-72 mx-2 relative">
-      <button className="absolute top-3 right-3 z-10 rounded-full bg-white text-primary p-2 shadow-md">
-        <FavoriteBorderRoundedIcon />
+      <button
+        className="absolute top-3 right-3 z-10 rounded-full bg-white text-primary p-2 shadow-md"
+        onClick={handle}
+      >
+        {addToWishList ? (
+          <FavoriteIcon className="text-red-500" />
+        ) : (
+          <FavoriteBorderRoundedIcon />
+        )}
       </button>
       <div>
-        <Image src={demoImg} alt="demo image" className="rounded-t-lg" />
+        <Image
+          src={demoImg}
+          alt="demo image"
+          className="rounded-t-lg"
+          layout="responsive"
+        />
         <div className="p-2">
           <Link href="/" passHref={true}>
             <a>

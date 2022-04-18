@@ -70,11 +70,11 @@ export default function Home() {
   return (
     <>
       <div className="w-screen min-h-auto md:min-h-[90vh] relative lg:flex justify-between items-start md:px-10 lg:pt-10">
-        <div className="absolute top-0 z-0 right-0 md:w-auto">
+        <div className="absolute top-0 z-0 right-0 md:w-auto hidden">
           <Image src={blob} alt="blob rectangle" />
         </div>
         <div className="p-5 relative z-10">
-          <h1 className="text-[2.5rem] lg:text-6xl font-semibold mb-4 lg:mb-6 leading-tight">Few <span className="text-primary">clicks</span> away from your new <span className="text-primary">home</span></h1>
+          <h1 className="text-4xl md:text-[2.5rem] lg:text-6xl font-semibold mb-4 lg:mb-6 leading-tight">Few <span className="text-primary">clicks</span> away from your new <span className="text-primary">home</span></h1>
           <p className="text-text-gray mb-5 lg:w-4/6">We&apos;re creating a seamless online experience from shopping on the largest rental network, to applying, to paying rent.</p>
           <div className="lg:w-4/6">
             <SearchForm />

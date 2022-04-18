@@ -4,12 +4,12 @@ import { useRef } from "react";
 function SearchForm() {
   let searchRef = useRef();
   return (
-    <form className="bg-primary/10 w-full h-auto rounded-2xl flex justify-center items-center pr-2">
+    <form className="bg-primary/10 w-full h-auto rounded-full flex justify-center items-center pr-1">
       <input
         type="search"
         ref={searchRef}
         placeholder="Search for a new home"
-        className="bg-transparent flex-2 py-3 px-2 outline-none w-full"
+        className="bg-transparent flex-2 p-3 outline-none w-full"
       />
       <button
         type="submit"

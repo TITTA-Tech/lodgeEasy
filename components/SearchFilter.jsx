@@ -38,7 +38,7 @@ function SearchFilter() {
   };
 
   return (
-    <div className="flex justify-between md:justify-evenly items-center flex-wrap w-full text-sm py-5">
+    <div className="flex justify-between md:justify-evenly items-center flex-nowrap w-full text-sm py-5 overflow-x-auto overflow-nest">
       <div className="border-[1px] border-text-gray rounded-lg">
         <Button onClick={handleClickOpen} className="text-text-gray text-sm">
           Price

@@ -7,7 +7,7 @@ function RentalCard() {
   return (
     <div className="relative bg-secondary rounded-lg max-h-72 before:w-full before:h-full before:bg-black/40 before:absolute before:z-10 before:top-0 before:left-0 before:rounded-lg">
       <div className="rounded-lg h-full w-full overflow-hidden">
-        <Image src={baseImg} alt="house" />
+        <Image src={baseImg} alt="house" layout="responsive" />
       </div>
       <h3 className="absolute top-0 left-0 z-20 text-white text-lg md:text-xl p-5 w-4/5 font-semibold">
         3 bedroom flat in Ekosodin

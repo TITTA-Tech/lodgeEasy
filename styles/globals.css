@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.overflow-nest::-webkit-scrollbar {
+  appearance: none;
+  height: 0;
+}
