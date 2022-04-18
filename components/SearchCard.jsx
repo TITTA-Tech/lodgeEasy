@@ -24,7 +24,7 @@ function SearchCard() {
         )}
       </button>
       <div className="flex justify-start items-start flex-wrap">
-        <div className="relative h-auto w-64 max-w-full rounded-lg">
+        <div className="relative h-48 md:h-full w-64 max-w-full rounded-lg">
           <Image
             src={demoImg}
             alt="demo image"
