@@ -24,12 +24,11 @@ function SearchCard() {
         )}
       </button>
       <div className="flex justify-start items-start flex-wrap">
-        <div className="h-auto w-64 max-w-full rounded-lg">
+        <div className="relative h-auto w-64 max-w-full rounded-lg">
           <Image
             src={demoImg}
             alt="demo image"
             className="rounded-lg mx-auto"
-            sizes="320 640 780"
             layout="fill"
           />
         </div>
