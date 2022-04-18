@@ -29,7 +29,7 @@ function SearchCard() {
             src={demoImg}
             alt="demo image"
             className="rounded-lg mx-auto"
-            layout="fill"
+            layout="responsive"
           />
         </div>
         <div className="p-2 md:w-2/5">
