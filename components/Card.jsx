@@ -9,7 +9,7 @@ import { useState } from "react";
 function Card() {
   const [addToWishList, setAddToWishList] = useState(false);
   const handle = () => {
-    setAddToWishList(true);
+    setAddToWishList(!addToWishList);
   };
   return (
     <div className="bg-white rounded-lg w-64 min-h-72 mx-2 relative">
