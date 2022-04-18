@@ -9,7 +9,7 @@ import { useState } from "react";
 function SearchCard() {
   const [addToWishList, setAddToWishList] = useState(false);
   const handle = () => {
-    setAddToWishList(true);
+    setAddToWishList(!addToWishList);
   };
   return (
     <div className="h-fit py-5 relative border-t-[1px] border-text-gray">
