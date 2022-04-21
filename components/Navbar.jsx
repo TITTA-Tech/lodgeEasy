@@ -21,7 +21,7 @@ export default function Navbar() {
         </a>
       </Link>
       <div
-        className={`absolute top-12 right-0 z-50 md:static p-5 md:p-0 md:opacity-[1!important] md:translate-x-0 min-h-[60vh] md:h-auto w-screen md-w-auto bg-white shadow-md md:shadow-none md:bg-transparent transition-all duration-1000 ${
+        className={`absolute top-12 right-0 z-50 md:static p-5 md:p-0 md:opacity-[1!important] md:translate-x-0 min-h-[60vh] md:min-h-fit md:h-auto w-screen md-w-auto bg-white shadow-md md:shadow-none md:bg-transparent transition-all duration-1000 ${
           menuOpened ? "translate-x-0 opacity-1" : "translate-x-full opacity-0"
         } md:flex md:justify-between md:-items-center flex-auto`}
       >
